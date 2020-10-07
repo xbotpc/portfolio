@@ -62,6 +62,7 @@
             {
                 "code": 120
             }
-        ]
+        ],
+        "no-useless-escape": "off"
     }
 }

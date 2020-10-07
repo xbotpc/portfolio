@@ -10,7 +10,7 @@ const Calculator = lazy(() => import('./pages/calculator'));
 
 
 function MasterPage() {
-    const showNavigation = [CONSTANTS.PATHS.DEFAULT, CONSTANTS.PATHS.RESET, CONSTANTS.PATHS.SIGNUP, CONSTANTS.PATHS.LOGIN].includes(window.location.pathname);
+    // const showNavigation = [CONSTANTS.PATHS.DEFAULT, CONSTANTS.PATHS.RESET, CONSTANTS.PATHS.SIGNUP, CONSTANTS.PATHS.LOGIN].includes(window.location.pathname);
     return (
         <>
             <div className={styles.windowContainer}>

@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react';
+import React, { useReducer } from 'react';
 import CalculatorButton from '../components/calculator/button';
 import styles from '../stylesheets/calculator/calculator.module.scss';
 import CONSTANTS from '../utils/constants.json';
@@ -151,9 +151,9 @@ const Calculator = () => {
         dispatch({ type: 'operator', payload: value });
     }
 
-    const equalToClick = (value: string) => {
-        // setDisplayText(`${displayText}${value}`);
-    }
+    // const equalToClick = (value: string) => {
+    //     // setDisplayText(`${displayText}${value}`);
+    // }
 
     const renderOperatorButtons = () => {
         return CONSTANTS.OPERATORS.map((operator: string) => <CalculatorButton value={operator} onClick={onOperatorClick} />);
