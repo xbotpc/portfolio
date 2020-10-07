@@ -1,0 +1,67 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true,
+        "cypress/globals": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:cypress/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "cypress"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "react/jsx-max-props-per-line": [
+            1,
+            {
+                "maximum": 3,
+                "when": "always"
+            }
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "object": true,
+                "array": false
+            }
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/jsx-indent": "off",
+        "react/jsx-indent-props": "off",
+        "react/state-in-constructor": "off",
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ]
+    }
+}

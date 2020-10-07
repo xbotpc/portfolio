@@ -1,0 +1,122 @@
+.calculatorContainer {
+  width: 350px;
+  height: 450px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas: "display display display display" "operator operator operator operator" "numberPad numberPad numberPad enter" "numberPad numberPad numberPad enter" "numberPad numberPad numberPad enter" "numberPad numberPad numberPad enter";
+  row-gap: 2px;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background: #b9b8b7;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 5px 10px 2px #8484a2;
+          box-shadow: 4px 5px 10px 2px #8484a2;
+}
+
+.calculatorContainer .display {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: display;
+  background-color: #232323;
+  height: 60px;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  border-radius: 15px 15px 0 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow-x: scroll;
+}
+
+.calculatorContainer .operators {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: operator;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2px;
+}
+
+.calculatorContainer .operators button {
+  background-color: #e9e9e9;
+}
+
+.calculatorContainer .numberPad {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: numberPad;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.calculatorContainer .numberPad :nth-last-child(3) {
+  border-radius: 0 0 0 15px;
+}
+
+.calculatorContainer .enter {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: enter;
+}
+
+.calculatorContainer .enter button {
+  background-color: #f8794d;
+  border-radius: 0 0 15px 0;
+}
+
+.calculatorContainer button {
+  font-size: 34px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 300;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.calculatorContainer button:active {
+  background-color: red;
+}
+/*# sourceMappingURL=calculator.module.css.map */

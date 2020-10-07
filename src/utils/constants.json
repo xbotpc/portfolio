@@ -1,0 +1,38 @@
+{
+    "PATHS": {
+        "DEFAULT": "/",
+        "LOGIN": "/login",
+        "SIGNUP": "/signup",
+        "RESET": "/reset",
+        "HOME": "/home",
+        "DASHBOARD": "/dashboard",
+        "TODO": "/todo",
+        "CALCULATOR": "/calculator",
+        "PROFILE": "/profile"
+    },
+    "STATUS": {
+        "OK": 200,
+        "CREATED": 201,
+        "INTERNAL_SERVER_ERROR": 500,
+        "UNAUTHORIZED": 401,
+        "FORBIDDEN": 403,
+        "NOT_FOUND": 404
+    },
+    "OPERATORS": [
+        "(",
+        "+",
+        "-",
+        "*",
+        "/"
+    ],
+    "STYLES": {
+        "DEFAULT_BUTTON": "standardButton",
+        "DEFAULT_ENTRY": "standardEntry",
+        "COLOR": {
+            "BUTTON": {
+                "DARK_BUTTON": "standardDarkButton",
+                "LIGHT_BUTTON": "standardLightButton"
+            }
+        }
+    }
+}

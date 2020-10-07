@@ -1,0 +1,12 @@
+.cardHeader {
+    font-size: 20px;
+}
+
+.cardContainer {
+    height: 300px;
+}
+
+.cards {
+    display: flex;
+    height: 200px;
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,OAAO,EAAE,CAAC;EACV,MAAM,EAAG,CAAC;CACb;;AAED,AAAA,gBAAgB,CAAC;EACb,MAAM,EAAE,KAAK;EACb,KAAK,EAAG,KAAK;CAQhB;;AAVD,AAII,gBAJY,CAIZ,qBAAqB,CAAC;EAClB,MAAM,EAAiB,IAAI;EAC3B,OAAO,EAAgB,IAAI;EAC3B,qBAAqB,EAAE,GAAG;EAC1B,kBAAkB,EAAK,IAAI;CAC9B",
+    "sources": [
+        "masterpage.module.scss"
+    ],
+    "names": [],
+    "file": "masterpage.module.css"
+}

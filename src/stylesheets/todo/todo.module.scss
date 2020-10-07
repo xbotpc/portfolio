@@ -1,0 +1,96 @@
+.todoBoxContainer {
+    display              : grid;
+    align-content        : flex-start;
+    justify-content      : center;
+    grid-template-rows   : auto;
+    grid-template-columns: 1fr;
+    padding              : 20px;
+    row-gap              : 20px;
+
+    .searchBox {
+        border       : none;
+        border-radius: 30px;
+        height       : 35px;
+        box-shadow   : 3px 5px 1px #cecece30;
+        padding-left : 20px;
+        width        : 60%;
+        justify-self : center;
+        outline      : none;
+        height       : 60px;
+    }
+
+    .todoCount {
+        text-align : center;
+        font-size  : 30px;
+        font-weight: 400;
+    }
+
+    .todoListContainer {
+        display     : grid;
+        justify-self: center;
+        width       : 50%;
+        row-gap     : 20px;
+    }
+
+}
+
+.todoContainer {
+    display            : flex;
+    justify-content    : space-between;
+    padding            : 3% 4%;
+    gap                : 20px;
+    background-color   : white;
+    // border-radius   : 50px;
+
+    input[type=checkbox] {
+        align-self: center;
+    }
+
+    input {
+        border : none;
+        outline: none;
+    }
+
+    .text {
+        flex       : 2;
+        font-size  : 16px;
+        font-weight: 400;
+        font-family: ui-sans-serif;
+        line-height: 21px;
+    }
+
+    .strikeOut {
+        text-decoration: line-through;
+    }
+
+    img {
+        width : 20px;
+        height: 20px;
+    }
+
+    .editIcon {
+        content: url('../../images/editIcon.png');
+    }
+
+    .deleteIcon {
+        content: url('../../images/trashIcon.png');
+    }
+
+    .greenTick {
+        content: url('../../images/greenTick.png');
+    }
+
+    .redCross {
+        content: url('../../images/redCross.png');
+    }
+}
+
+.inCompleteShadow {
+    box-shadow   : 2px 4px 7px 1px #d6c3c3, -2px -2px 10px 1px #d6c3c3;
+    // box-shadow: 2px 4px 7px 1px #5aa764, -2px -2px 10px 1px #5aa764;
+}
+
+.completeShadow {
+    box-shadow   : 2px 4px 7px 1px #d6c3c3, -2px -2px 10px 1px #d6c3c3;
+    // box-shadow: 2px 4px 7px 1px #f34242, -2px -2px 10px 1px #f34242;
+}

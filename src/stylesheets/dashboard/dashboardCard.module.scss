@@ -1,0 +1,18 @@
+.cardContainer {
+    display              : grid;
+    grid-template-rows   : 1fr 1fr;
+    grid-template-columns: 1fr;
+    background-color     : white;
+
+    img {
+        width        : 50px;
+        height       : 50px;
+        border-radius: 50%;
+    }
+}
+
+// .headerImage {
+//     width        : 50px;
+//     height       : 50px;
+//     border-radius: 50%;
+// }

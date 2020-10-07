@@ -1,0 +1,113 @@
+.todoBoxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 20px;
+  row-gap: 20px;
+}
+
+.todoBoxContainer .searchBox {
+  border: none;
+  border-radius: 30px;
+  height: 35px;
+  -webkit-box-shadow: 3px 5px 1px #cecece30;
+          box-shadow: 3px 5px 1px #cecece30;
+  padding-left: 20px;
+  width: 60%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  outline: none;
+  height: 60px;
+}
+
+.todoBoxContainer .todoCount {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.todoBoxContainer .todoListContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 50%;
+  row-gap: 20px;
+}
+
+.todoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3% 4%;
+  gap: 20px;
+  background-color: white;
+}
+
+.todoContainer input[type=checkbox] {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.todoContainer input {
+  border: none;
+  outline: none;
+}
+
+.todoContainer .text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: ui-sans-serif;
+  line-height: 21px;
+}
+
+.todoContainer .strikeOut {
+  text-decoration: line-through;
+}
+
+.todoContainer img {
+  width: 20px;
+  height: 20px;
+}
+
+.todoContainer .editIcon {
+  content: url("../../images/editIcon.png");
+}
+
+.todoContainer .deleteIcon {
+  content: url("../../images/trashIcon.png");
+}
+
+.todoContainer .greenTick {
+  content: url("../../images/greenTick.png");
+}
+
+.todoContainer .redCross {
+  content: url("../../images/redCross.png");
+}
+
+.inCompleteShadow {
+  -webkit-box-shadow: 2px 4px 7px 1px #d6c3c3, -2px -2px 10px 1px #d6c3c3;
+          box-shadow: 2px 4px 7px 1px #d6c3c3, -2px -2px 10px 1px #d6c3c3;
+}
+
+.completeShadow {
+  -webkit-box-shadow: 2px 4px 7px 1px #d6c3c3, -2px -2px 10px 1px #d6c3c3;
+          box-shadow: 2px 4px 7px 1px #d6c3c3, -2px -2px 10px 1px #d6c3c3;
+}
+/*# sourceMappingURL=todo.module.css.map */
