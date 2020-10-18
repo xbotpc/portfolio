@@ -48,13 +48,13 @@ const Todo = (props: TodoProps) => {
     return (
         <Fragment key={id}>
             <div className={cx(styles.todoContainer, { [styles.inCompleteShadow]: false })} id={id}>
-                <input type="checkbox" name="checkbox" onClick={onTaskDoneClick} checked={isCompleted} />
+                <input id={id} type="checkbox" name="checkbox" onClick={onTaskDoneClick} checked={isCompleted} />
                 {!editMode
                     ?
                     <>
-                        <div className={cx(styles.text, { [styles.strikeOut]: isCompleted })}>
+                        <label htmlFor={id} aria-labelledby={id} className={cx(styles.text, { [styles.strikeOut]: isCompleted })}>
                             {todoText}
-                        </div>
+                        </label>
                     </>
                     :
                     <>
